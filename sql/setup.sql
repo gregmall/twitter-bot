@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS tapquotes;
+
+CREATE TABLE tapquotes(
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  quote TEXT NOT NULL,
+  character TEXT NOT NULL,
+  hashtags TEXT[] NOT NULL
+
+);
