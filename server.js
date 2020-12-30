@@ -10,7 +10,9 @@ try {
 } catch(error){
   console.log(error.message);
 }
-
+app.get('/', (req,res)=>{
+  res.send('This one goes to 11')
+});
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`Started on ${PORT}`);
